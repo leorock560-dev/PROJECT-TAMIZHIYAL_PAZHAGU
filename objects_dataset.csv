@@ -1,0 +1,188 @@
+english,tamil
+me,என்னை
+us,எங்களை
+you,உன்னை
+you_plural,உங்களை
+him,அவனை
+her,அவளை
+it,அதை
+them,அவர்களை
+student,மாணவரை
+teacher,ஆசிரியரை
+doctor,மருத்துவரை
+engineer,பொறியாளரை
+friend,நண்பனை
+boy,சிறுவனை
+girl,சிறுமியை
+man,மனிதனை
+woman,பெண்ணை
+child,குழந்தையை
+father,தந்தையை
+mother,தாயை
+brother,சகோதரனை
+sister,சகோதரியை
+uncle,மாமாவை
+aunt,அத்தையை
+grandfather,தாத்தாவை
+grandmother,பாட்டியை
+baby,குழந்தையை
+leader,தலைவரை
+manager,மேலாளரை
+employee,ஊழியரை
+customer,வாடிக்கையாளரை
+farmer,விவசாயியை
+driver,ஓட்டுநரை
+police,காவலரை
+lawyer,வழக்கறிஞரை
+judge,நீதிபதியை
+soldier,படைவீரரை
+dog,நாயை
+cat,பூனையை
+cow,பசுவை
+buffalo,எருமையை
+goat,ஆட்டை
+sheep,செம்மறியாட்டை
+horse,குதிரையை
+donkey,கழுதையை
+elephant,யானையை
+tiger,புலியை
+lion,சிங்கத்தை
+deer,மானை
+monkey,குரங்கை
+rabbit,முயலை
+rat,எலியை
+mouse,எலியை
+bird,பறவையை
+crow,காக்கையை
+parrot,கிளியை
+peacock,மயிலை
+hen,கோழியை
+rooster,சேவலை
+duck,வாத்தை
+fish,மீனை
+shark,சுறாமீனை
+snake,பாம்பை
+book,புத்தகத்தை
+notebook,நோட்டுப் புத்தகத்தை
+pen,பேனாவை
+pencil,பென்சிலை
+eraser,அழிப்பானை
+sharpener,கூர்மையாக்கியை
+bag,பையை
+phone,தொலைபேசியை
+mobile,மொபைலை
+computer,கணினியை
+laptop,மடிக்கணினியை
+keyboard,விசைப்பலகையை
+mouse_device,சுட்டியை
+monitor,திரையை
+tablet,டேப்லெட்டை
+camera,கேமராவை
+television,தொலைக்காட்சியை
+radio,வானொலியை
+fan,மின்விசிறியை
+light,விளக்கை
+bulb,மின்விளக்கை
+table,மேசையை
+chair,நாற்காலியை
+bed,படுக்கையை
+sofa,சோபாவை
+cup,கோப்பையை
+plate,தட்டையை
+spoon,கரண்டியை
+knife,கத்தியை
+bottle,பாட்டிலை
+key,சாவியை
+box,பெட்டியை
+door,கதவை
+window,ஜன்னலை
+clock,கடிகாரத்தை
+watch,கைக்கடிகாரத்தை
+shirt,சட்டையை
+pant,கால்சட்டையை
+shoe,காலணியை
+hat,தொப்பியை
+rice,சோற்றை
+water,தண்ணீரை
+milk,பாலை
+tea,தேநீரை
+coffee,காபியை
+juice,சாறை
+apple,ஆப்பிளை
+banana,வாழைப்பழத்தை
+mango,மாம்பழத்தை
+orange,ஆரஞ்சைப் பழத்தை
+grape,திராட்சைப் பழத்தை
+guava,கொய்யாப்பழத்தை
+egg,முட்டையை
+bread,ரொட்டியை
+cake,கேக்கை
+chicken,கோழிக்கறியை
+mutton,ஆட்டிறைச்சியை
+fish_food,மீனை
+vegetable,காய்கறியை
+potato,உருளைக்கிழங்கை
+tomato,தக்காளியை
+onion,வெங்காயத்தை
+school,பள்ளிக்கு
+college,கல்லூரிக்கு
+university,பல்கலைக்கழகத்திற்கு
+house,வீட்டிற்கு
+home,வீட்டிற்கு
+hospital,மருத்துவமனைக்கு
+clinic,மருத்துவமனைக்கு
+market,சந்தைக்கு
+shop,கடைக்கு
+office,அலுவலகத்திற்கு
+bank,வங்கிக்கு
+library,நூலகத்திற்கு
+museum,அருங்காட்சியகத்திற்கு
+park,பூங்காவிற்கு
+garden,தோட்டத்திற்கு
+playground,விளையாட்டு மைதானத்திற்கு
+stadium,விளையாட்டு அரங்கத்திற்கு
+temple,கோவிலுக்கு
+church,தேவாலயத்திற்கு
+mosque,மசூதிக்கு
+restaurant,உணவகத்திற்கு
+hotel,விடுதிக்கு
+station,நிலையத்திற்கு
+bus_station,பேருந்து நிலையத்திற்கு
+railway_station,ரயில் நிலையத்திற்கு
+airport,விமான நிலையத்திற்கு
+zoo,விலங்குக் காட்சிச்சாலைக்கு
+beach,கடற்கரைக்கு
+river,ஆற்றிற்கு
+lake,ஏரிக்கு
+pond,குளத்திற்கு
+mountain,மலைக்கு
+forest,காட்டிற்கு
+farm,பண்ணைக்கு
+factory,தொழிற்சாலைக்கு
+laboratory,ஆய்வகத்திற்கு
+classroom,வகுப்பறைக்கு
+kitchen,சமையலறைக்கு
+bedroom,படுக்கையறைக்கு
+bathroom,குளியலறைக்கு
+garage,வாகன நிறுத்துமிடத்திற்கு
+gym,உடற்பயிற்சி கூடத்திற்கு
+swimming_pool,நீச்சல் குளத்திற்கு
+bookshop,புத்தகக் கடைக்கு
+pharmacy,மருந்தகத்திற்கு
+supermarket,பல்பொருள் அங்காடிக்கு
+mall,வணிக வளாகத்திற்கு
+cinema,திரையரங்கிற்கு
+court,நீதிமன்றத்திற்கு
+prison,சிறைக்கு
+village,கிராமத்திற்கு
+town,நகரத்திற்கு
+city,மாநகரத்திற்கு
+road,சாலைக்கு
+bridge,பாலத்திற்கு
+harbor,துறைமுகத்திற்கு
+petrol_bunk,பெட்ரோல் நிலையத்திற்கு
+atm,ஏடிஎம் மையத்திற்கு
+marriage_hall,திருமண மண்டபத்திற்கு
+auditorium,கலையரங்கத்திற்கு
+tower,கோபுரத்திற்கு
+lighthouse,கலங்கரை விளக்கத்திற்கு

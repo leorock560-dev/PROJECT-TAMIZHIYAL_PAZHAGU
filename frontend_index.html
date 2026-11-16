@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamil Grammar Corrector</title>
+<link rel="stylesheet" href="frontend_style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="sidebar">
+<div class="logo">
+    <img src="project logo.png" alt="">
+</div>
+
+<div class="menu">
+
+<button class="grammar_corrector"><i class="fa-solid fa-check"></i> Grammar Corrector</button>
+
+<button class="sentence_builder"><i class="fa-solid fa-puzzle-piece"></i> Sentence Builder</button>
+
+<button class="transliteration"><i class="fa-solid fa-pen"></i> Transliterator</button>
+
+<button class="user"><i class="fa-solid fa-circle-user"></i> User 1102</button>
+
+<button class="logout" onclick="logOut()">
+    <i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out
+</button>
+
+</div>
+
+</div>
+<div>
+
+<div class="main" id="grammar" style="display: none; padding: 20px; margin: 30px;">
+
+<div class="header">
+
+<div>
+<h1 style="color: #00A5FF;">Tamil Grammar Corrector</h1>
+<p>Correct grammar, enhance clarity and refine your Tamil writing.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>1. Input Sentence</h2>
+
+<textarea class="input" id="grammar_input" placeholder="Type Tamil sentence here... Example: அவன் பள்ளிக்கு சென்றேன்"></textarea>
+
+<div class="bottom">
+
+<span id="count">0 / 500 characters</span>
+
+<div class="buttons">
+
+<button class="btn clear" onclick="clearGrammer()">
+<i class="fa-solid fa-trash"></i>
+Clear
+</button>
+
+<button class="btn correct" onclick="correctSentence()">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+Correct Sentence
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="card output">
+
+<h2 style="color:#22c55e">2. Corrected Output</h2>
+
+<div class="result">
+
+<span id="output">
+அவன் பள்ளிக்கு சென்றான்.
+</span>
+
+<button class="copy" onclick="copyOutput()">
+Copy
+</button>
+
+</div>
+
+</div>
+
+<div class="card error">
+
+<h2 style="color:#a855f7">
+3. Error Type
+</h2>
+
+<div class="error-box" id="error_type">
+Subject-Verb Agreement
+</div>
+
+</div>
+
+</div>
+
+<div class="card explain">
+
+<h2 style="color: orange">
+4. Explanation
+</h2>
+
+<div class="explanation" id="explanation">
+The subject and verb forms do not agree.
+</div>
+
+</div>
+
+<div class="card suggestions">
+
+<h2>5. Suggestions</h2>
+
+<ul>
+
+<li>Use correct verb endings.</li>
+
+<li>Check tense consistency.</li>
+
+<li>Maintain subject-verb agreement.</li>
+
+</ul>
+
+</div>
+
+</div>
+<div class="container" style="padding: 20px; display: none; margin: 30px;" id="transliterator">
+    <h1 style="color: #00A5FF;">Tamil Transliterator</h1>
+        <p>Convert Tanglish text into Tamil</p>
+    <div class="card">
+
+        <h2>1. Input Word</h2>
+
+        <textarea id="trans_input" class="input" placeholder="Type Tanglish here... Example: vanakkam nanba"></textarea>
+
+        <div class="bottom">
+
+<span id="trans_count">0 / 500 characters</span>
+
+<div class="buttons">
+
+<button class="btn clear" onclick="clearTransliteration()">
+<i class="fa-solid fa-trash"></i>
+Clear
+</button>
+
+<button class="btn correct" onclick="transliterate()">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+Transliterate
+</button>
+
+
+
+</div>
+</div>
+
+    </div>
+    <div class="card">
+        <div class="card output" style="padding: 0;">
+
+<h2 style="color:#22c55e">2. Transliterated Output</h2>
+
+<div class="result">
+
+<span id="trans_output">
+வணக்கம் நண்பா.
+</span>
+
+<button class="copy" onclick="copyOutput()">
+Copy
+</button>
+
+</div>
+
+</div>
+    </div>
+    
+<div class="card suggestions">
+
+<h2>3. Suggestions</h2>
+
+<ul>
+
+<li>Type Tamil words using English letters.</li>
+
+<li>Use spaces to separate words clearly.</li>
+
+<li>Check the output for proper Tamil spelling.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="container" style="padding: 20px; display: flex; margin: 30px;" id="sentence-builder">
+    <h1 style="color: #00A5FF;">Tamil Sentence Builder</h1>
+    <p>Create meaningful Tamil sentences</p>
+
+    <div class="card">
+        <h2>1. Input Details</h2>
+            <div class="input" style="display: flex; justify-content: space-around;">
+        <input type="text" id="subject" class="input" placeholder="Enter Subject">
+
+        <input type="text" id="object" class="input" placeholder="Enter Object">
+
+        <input type="text" id="verb" class="input" placeholder="Enter Verb">
+
+        <select id="tense" class="input" style="color: gray; width: 170px;">
+            <option value="">Select Tense</option>
+            <option value="past">Past</option>
+            <option value="present">Present</option>
+            <option value="future">Future</option>
+        </select>
+        </div>
+
+        <div class="bottom">
+
+            <span id="count">4 fields</span>
+
+            <div class="buttons">
+
+                <button class="btn clear" onclick="clearSentence()">
+                    <i class="fa-solid fa-trash"></i>
+                    Clear
+                </button>
+
+                <button class="btn correct" onclick="sentenceBuilder()">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Generate
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="card output" style="padding: 0;">
+
+            <h2 style="color:#22c55e">2. Generated Sentence</h2>
+
+            <div class="result">
+
+                <span id="sent_output" >
+                    நான் பள்ளிக்குச் சென்றேன்.
+                </span>
+
+                <button class="copy" onclick="copyOutput()">
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card suggestions">
+
+        <h2>3. Suggestions</h2>
+
+        <ul>
+
+            <li>Choose the correct tense before generating.</li>
+
+            <li>Provide meaningful subject, object and verb.</li>
+
+            <li>Review the generated sentence for context.</li>
+
+        </ul>
+
+    </div>
+
+    
+
+</div>
+<div id="features" style="margin: 30px; padding: 20px;">
+
+        <div id="feature" class="sentence-builder-feature" onclick="showSent()">
+            <i class="fa-solid fa-puzzle-piece orange"></i>
+            <h2>Sentence Builder</h2>
+            <p>Create meaningful Tamil sentences.</p>
+        </div>
+
+        <div id="feature" class="transliterator-feature" onclick="showTrans()">
+            <i class="fa-solid fa-pen blue"></i>
+            <h2>Transliterator</h2>
+            <p>Helps to learn Tamil spellings.</p>
+        </div>
+
+        <div id="feature" class="grammar_corrector-feature" onclick="showGram()">
+            <i class="fa-solid fa-chart-line green"></i>
+            <h2>Grammar Corrector</h2>
+            <p>Improve your writing accuracy.</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="frontend_script.js"></script>
+</body>
+</html>

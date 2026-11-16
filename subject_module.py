@@ -1,0 +1,30 @@
+subject={
+    "i":{
+        "tamil":"நான்",
+        "type":"first-singular"
+    },
+    "we":{
+        "tamil":"நாங்கள்",
+        "type":"first-plural"
+    },
+    "you":{
+        "tamil":"நீ",
+        "type":"second-singular"
+    },
+    "he":{
+        "tamil":"அவன்",
+        "type":"male"
+    },
+    "she":{
+        "tamil":"அவள்",
+        "type":"female"
+    },
+    "it":{
+        "tamil":"அது",
+        "type":"third-singular"
+    },
+    "they":{
+        "tamil":"அவர்கள்",
+        "type":"third-plural"
+    }
+}
